@@ -1,0 +1,181 @@
+@font-face {
+  font-family:'HelveticaCondensed';
+  src:url('../fonts/hvc-webfont.eot');
+  src:url('../fonts/hvc-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/hvc-webfont.woff') format('woff'), url('../fonts/hvc-webfont.ttf') format('truetype'), url('../fonts/hvc-webfont.svg#helveticacondensed') format('svg');
+  font-weight:normal;
+  font-style:normal}
+@font-face {
+  font-family:'HelveticaCondensedBlack';
+  src:url('../fonts/hvcbl-webfont.eot');
+  src:url('../fonts/hvcbl-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/hvcbl-webfont.woff') format('woff'), url('../fonts/hvcbl-webfont.ttf') format('truetype'), url('../fonts/hvcbl-webfont.svg#helveticacondensed-black') format('svg');
+  font-weight:normal;
+  font-style:normal}
+@font-face {
+  font-family:'HelveticaCondensedLight';
+  src:url('../fonts/hvcl-webfont.eot');
+  src:url('../fonts/hvcl-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/hvcl-webfont.woff') format('woff'), url('../fonts/hvcl-webfont.ttf') format('truetype'), url('../fonts/hvcl-webfont.svg#helveticacondensed-light') format('svg');
+  font-weight:normal;
+  font-style:normal}
+
+  html, body, section {
+  height: 100%;
+}
+
+body.choose {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+  text-shadow: 0 2px 2px #b6701e;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Pattern styles */
+.container {
+  display: flex;
+}
+.left-half:hover {
+     filter:  brightness(100%);
+     -webkit-filter:  brightness(100%);
+     -moz-filter: brightness(100%);
+     -ms-filter: brightness(100%);
+     -o-filter: brightness(100%);
+
+}
+
+.right-half:hover{
+     filter:  brightness(100%);
+     -webkit-filter:  brightness(100%);
+     -moz-filter: brightness(100%);
+     -ms-filter: brightness(100%);
+     -o-filter: brightness(100%);
+
+}
+
+
+
+.left-half {
+  float: left;
+  background-color: #2c3e50;
+  background-image: url(../img/serious.jpg);
+  background-position: center;
+  flex: 1;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  width: 50%;
+  background-size: 100% 100%;
+  filter:  brightness(40%);
+     -webkit-filter:  brightness(40%);
+     -moz-filter: brightness(40%);
+     -ms-filter: brightness(40%);
+     -o-filter: brightness(40%);
+}
+
+.right-half {
+  float: right;
+  background-color: #95a5a6;
+  background-image: url(../img/extra.jpg);
+  background-repeat: no-repeat;
+  padding: 1rem;
+  width: 50%;
+  background-position: center;
+  background-size: 100% 100%;
+  filter:  brightness(40%);
+     -webkit-filter:  brightness(40%);
+     -moz-filter: brightness(40%);
+     -ms-filter: brightness(40%);
+     -o-filter: brightness(40%);
+}
+
+.or {
+  font-family: 'HelveticaCondensed', Helvetica, Verdana, Arial, sans-serif;
+  font-size: 20px;
+  color: #7f7d7d;
+  line-height: 1em;
+  color: white;
+  background-color: #b8032e;
+  border: 30px solid #fff;
+  padding: 20px 20px 20px 20px;
+  color: #fff;
+  border-radius: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #fff;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.left:hover:before, .left:focus:before, .left:active:before {
+  right: 0;
+}
+
+.right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  height: 4px;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.right:hover:before, .right:focus:before, .right:active:before {
+  left: 0;
+}
